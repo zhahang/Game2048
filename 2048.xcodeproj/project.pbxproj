@@ -1,0 +1,684 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E14BA90F286AD44200082EA4 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E14BA90E286AD44200082EA4 /* main.cpp */; };
+		E16A498F286BF65300EF1A38 /* libgainputstatic.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E16A498E286BF65300EF1A38 /* libgainputstatic.a */; };
+		E16A4998286BFF4000EF1A38 /* hardware_input.mm in Sources */ = {isa = PBXBuildFile; fileRef = E16A4997286BFF4000EF1A38 /* hardware_input.mm */; };
+		E16A4999286C4DD200EF1A38 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E16A498C286BF57E00EF1A38 /* AppKit.framework */; };
+		E16A499A286C4DD900EF1A38 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E16A498A286BF4F200EF1A38 /* IOKit.framework */; };
+		E16A499B286C4DE000EF1A38 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E16A4988286BF4A000EF1A38 /* CoreGraphics.framework */; };
+		E16A49A1286C60F100EF1A38 /* scene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E16A499F286C60F100EF1A38 /* scene.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E14BA909286AD44200082EA4 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		E14BA90B286AD44200082EA4 /* 2048 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 2048; sourceTree = BUILT_PRODUCTS_DIR; };
+		E14BA90E286AD44200082EA4 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		E16A48EA286BF22B00EF1A38 /* CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
+		E16A48ED286BF22B00EF1A38 /* GainputMapFilters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GainputMapFilters.h; sourceTree = "<group>"; };
+		E16A48EE286BF22B00EF1A38 /* GainputInputDeviceTouch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GainputInputDeviceTouch.h; sourceTree = "<group>"; };
+		E16A48EF286BF22B00EF1A38 /* GainputContainers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GainputContainers.h; sourceTree = "<group>"; };
+		E16A48F0286BF22B00EF1A38 /* GainputInputMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GainputInputMap.h; sourceTree = "<group>"; };
+		E16A48F1286BF22B00EF1A38 /* GainputInputDevicePad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GainputInputDevicePad.h; sourceTree = "<group>"; };
+		E16A48F2286BF22B00EF1A38 /* GainputDebugRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GainputDebugRenderer.h; sourceTree = "<group>"; };
+		E16A48F3286BF22B00EF1A38 /* GainputAllocator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GainputAllocator.h; sourceTree = "<group>"; };
+		E16A48F4286BF22B00EF1A38 /* GainputLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GainputLog.h; sourceTree = "<group>"; };
+		E16A48F5286BF22B00EF1A38 /* GainputInputDeltaState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GainputInputDeltaState.h; sourceTree = "<group>"; };
+		E16A48F6286BF22B00EF1A38 /* GainputInputManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GainputInputManager.h; sourceTree = "<group>"; };
+		E16A48F7286BF22B00EF1A38 /* GainputInputState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GainputInputState.h; sourceTree = "<group>"; };
+		E16A48F8286BF22B00EF1A38 /* gainput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gainput.h; sourceTree = "<group>"; };
+		E16A48F9286BF22B00EF1A38 /* GainputInputDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GainputInputDevice.h; sourceTree = "<group>"; };
+		E16A48FA286BF22B00EF1A38 /* GainputInputDeviceMouse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GainputInputDeviceMouse.h; sourceTree = "<group>"; };
+		E16A48FB286BF22B00EF1A38 /* GainputHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GainputHelpers.h; sourceTree = "<group>"; };
+		E16A48FC286BF22B00EF1A38 /* GainputInputDeviceKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GainputInputDeviceKeyboard.h; sourceTree = "<group>"; };
+		E16A48FE286BF22B00EF1A38 /* GainputTapGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GainputTapGesture.h; sourceTree = "<group>"; };
+		E16A48FF286BF22B00EF1A38 /* GainputPinchGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GainputPinchGesture.h; sourceTree = "<group>"; };
+		E16A4900286BF22B00EF1A38 /* GainputButtonStickGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GainputButtonStickGesture.h; sourceTree = "<group>"; };
+		E16A4901286BF22B00EF1A38 /* GainputDoubleClickGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GainputDoubleClickGesture.h; sourceTree = "<group>"; };
+		E16A4902286BF22B00EF1A38 /* GainputRotateGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GainputRotateGesture.h; sourceTree = "<group>"; };
+		E16A4903286BF22B00EF1A38 /* GainputGestures.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GainputGestures.h; sourceTree = "<group>"; };
+		E16A4904286BF22B00EF1A38 /* GainputSimultaneouslyDownGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GainputSimultaneouslyDownGesture.h; sourceTree = "<group>"; };
+		E16A4905286BF22B00EF1A38 /* GainputHoldGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GainputHoldGesture.h; sourceTree = "<group>"; };
+		E16A4906286BF22B00EF1A38 /* GainputInputDeviceBuiltIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GainputInputDeviceBuiltIn.h; sourceTree = "<group>"; };
+		E16A4907286BF22B00EF1A38 /* GainputInputListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GainputInputListener.h; sourceTree = "<group>"; };
+		E16A4909286BF22B00EF1A38 /* GainputInputRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GainputInputRecorder.h; sourceTree = "<group>"; };
+		E16A490A286BF22B00EF1A38 /* GainputInputPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GainputInputPlayer.h; sourceTree = "<group>"; };
+		E16A490B286BF22B00EF1A38 /* GainputInputRecording.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GainputInputRecording.h; sourceTree = "<group>"; };
+		E16A490C286BF22B00EF1A38 /* GainputIos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GainputIos.h; sourceTree = "<group>"; };
+		E16A490F286BF22B00EF1A38 /* GainputWindows.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GainputWindows.h; sourceTree = "<group>"; };
+		E16A4910286BF22B00EF1A38 /* GainputIos.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GainputIos.mm; sourceTree = "<group>"; };
+		E16A4912286BF22B00EF1A38 /* GainputInputDeviceTouchNull.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GainputInputDeviceTouchNull.h; sourceTree = "<group>"; };
+		E16A4913286BF22B00EF1A38 /* GainputInputDeviceTouchAndroid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GainputInputDeviceTouchAndroid.h; sourceTree = "<group>"; };
+		E16A4914286BF22B00EF1A38 /* GainputInputDeviceTouch.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GainputInputDeviceTouch.cpp; sourceTree = "<group>"; };
+		E16A4915286BF22B00EF1A38 /* GainputTouchInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GainputTouchInfo.h; sourceTree = "<group>"; };
+		E16A4916286BF22B00EF1A38 /* GainputInputDeviceTouchImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GainputInputDeviceTouchImpl.h; sourceTree = "<group>"; };
+		E16A4917286BF22B00EF1A38 /* GainputInputDeviceTouchIos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GainputInputDeviceTouchIos.h; sourceTree = "<group>"; };
+		E16A4918286BF22B00EF1A38 /* gainput.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = gainput.cpp; sourceTree = "<group>"; };
+		E16A4919286BF22B00EF1A38 /* GainputInputState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GainputInputState.cpp; sourceTree = "<group>"; };
+		E16A491A286BF22B00EF1A38 /* GainputMapFilters.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GainputMapFilters.cpp; sourceTree = "<group>"; };
+		E16A491C286BF22B00EF1A38 /* GainputInputDevicePadMac.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GainputInputDevicePadMac.cpp; sourceTree = "<group>"; };
+		E16A491D286BF22B00EF1A38 /* GainputInputDevicePadIos.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GainputInputDevicePadIos.mm; sourceTree = "<group>"; };
+		E16A491E286BF22B00EF1A38 /* GainputInputDevicePadWin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GainputInputDevicePadWin.h; sourceTree = "<group>"; };
+		E16A491F286BF22B00EF1A38 /* GainputInputDevicePadMac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GainputInputDevicePadMac.h; sourceTree = "<group>"; };
+		E16A4920286BF22B00EF1A38 /* GainputInputDevicePadAndroid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GainputInputDevicePadAndroid.h; sourceTree = "<group>"; };
+		E16A4921286BF22B00EF1A38 /* GainputInputDevicePadImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GainputInputDevicePadImpl.h; sourceTree = "<group>"; };
+		E16A4922286BF22B00EF1A38 /* GainputInputDevicePad.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GainputInputDevicePad.cpp; sourceTree = "<group>"; };
+		E16A4923286BF22B00EF1A38 /* GainputInputDevicePadLinux.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GainputInputDevicePadLinux.h; sourceTree = "<group>"; };
+		E16A4924286BF22B00EF1A38 /* GainputInputDevicePadIos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GainputInputDevicePadIos.h; sourceTree = "<group>"; };
+		E16A4925286BF22B00EF1A38 /* GainputInputDevicePadNull.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GainputInputDevicePadNull.h; sourceTree = "<group>"; };
+		E16A4927286BF22B00EF1A38 /* GainputMouseInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GainputMouseInfo.h; sourceTree = "<group>"; };
+		E16A4928286BF22B00EF1A38 /* GainputInputDeviceMouseImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GainputInputDeviceMouseImpl.h; sourceTree = "<group>"; };
+		E16A4929286BF22B00EF1A38 /* GainputInputDeviceMouseEvdev.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GainputInputDeviceMouseEvdev.h; sourceTree = "<group>"; };
+		E16A492A286BF22B00EF1A38 /* GainputInputDeviceMouseMac.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GainputInputDeviceMouseMac.mm; sourceTree = "<group>"; };
+		E16A492B286BF22B00EF1A38 /* GainputInputDeviceMouseWinRaw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GainputInputDeviceMouseWinRaw.h; sourceTree = "<group>"; };
+		E16A492C286BF22B00EF1A38 /* GainputInputDeviceMouseNull.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GainputInputDeviceMouseNull.h; sourceTree = "<group>"; };
+		E16A492D286BF22B00EF1A38 /* GainputInputDeviceMouseMac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GainputInputDeviceMouseMac.h; sourceTree = "<group>"; };
+		E16A492E286BF22B00EF1A38 /* GainputInputDeviceMouse.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GainputInputDeviceMouse.cpp; sourceTree = "<group>"; };
+		E16A492F286BF22B00EF1A38 /* GainputInputDeviceMouseLinux.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GainputInputDeviceMouseLinux.h; sourceTree = "<group>"; };
+		E16A4930286BF22B00EF1A38 /* GainputInputDeviceMouseWin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GainputInputDeviceMouseWin.h; sourceTree = "<group>"; };
+		E16A4931286BF22B00EF1A38 /* GainputHelpersEvdev.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GainputHelpersEvdev.h; sourceTree = "<group>"; };
+		E16A4932286BF22B00EF1A38 /* GainputInputDeltaState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GainputInputDeltaState.cpp; sourceTree = "<group>"; };
+		E16A4934286BF22B00EF1A38 /* GainputButtonStickGesture.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GainputButtonStickGesture.cpp; sourceTree = "<group>"; };
+		E16A4935286BF22B00EF1A38 /* GainputDoubleClickGesture.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GainputDoubleClickGesture.cpp; sourceTree = "<group>"; };
+		E16A4936286BF22B00EF1A38 /* GainputPinchGesture.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GainputPinchGesture.cpp; sourceTree = "<group>"; };
+		E16A4937286BF22B00EF1A38 /* GainputRotateGesture.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GainputRotateGesture.cpp; sourceTree = "<group>"; };
+		E16A4938286BF22B00EF1A38 /* GainputSimultaneouslyDownGesture.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GainputSimultaneouslyDownGesture.cpp; sourceTree = "<group>"; };
+		E16A4939286BF22B00EF1A38 /* GainputTapGesture.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GainputTapGesture.cpp; sourceTree = "<group>"; };
+		E16A493A286BF22B00EF1A38 /* GainputHoldGesture.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GainputHoldGesture.cpp; sourceTree = "<group>"; };
+		E16A493C286BF22B00EF1A38 /* GainputInputRecording.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GainputInputRecording.cpp; sourceTree = "<group>"; };
+		E16A493D286BF22B00EF1A38 /* GainputInputRecorder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GainputInputRecorder.cpp; sourceTree = "<group>"; };
+		E16A493E286BF22B00EF1A38 /* GainputInputPlayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GainputInputPlayer.cpp; sourceTree = "<group>"; };
+		E16A4940286BF22B00EF1A38 /* GainputNetAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GainputNetAddress.h; sourceTree = "<group>"; };
+		E16A4941286BF22B00EF1A38 /* GainputNetListener.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GainputNetListener.cpp; sourceTree = "<group>"; };
+		E16A4942286BF22B00EF1A38 /* GainputMemoryStream.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GainputMemoryStream.cpp; sourceTree = "<group>"; };
+		E16A4943286BF22B00EF1A38 /* GainputNetListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GainputNetListener.h; sourceTree = "<group>"; };
+		E16A4944286BF22B00EF1A38 /* GainputNetConnection.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GainputNetConnection.cpp; sourceTree = "<group>"; };
+		E16A4945286BF22B00EF1A38 /* GainputMemoryStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GainputMemoryStream.h; sourceTree = "<group>"; };
+		E16A4946286BF22B00EF1A38 /* GainputDev.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GainputDev.h; sourceTree = "<group>"; };
+		E16A4947286BF22B00EF1A38 /* GainputNetConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GainputNetConnection.h; sourceTree = "<group>"; };
+		E16A4948286BF22B00EF1A38 /* GainputDevProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GainputDevProtocol.h; sourceTree = "<group>"; };
+		E16A4949286BF22B00EF1A38 /* GainputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GainputStream.h; sourceTree = "<group>"; };
+		E16A494A286BF22B00EF1A38 /* GainputDev.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GainputDev.cpp; sourceTree = "<group>"; };
+		E16A494B286BF22B00EF1A38 /* GainputNetAddress.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GainputNetAddress.cpp; sourceTree = "<group>"; };
+		E16A494C286BF22B00EF1A38 /* GainputMac.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GainputMac.mm; sourceTree = "<group>"; };
+		E16A494D286BF22B00EF1A38 /* GainputInputMap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GainputInputMap.cpp; sourceTree = "<group>"; };
+		E16A494E286BF22B00EF1A38 /* GainputInputManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GainputInputManager.cpp; sourceTree = "<group>"; };
+		E16A494F286BF22B00EF1A38 /* GainputAllocator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GainputAllocator.cpp; sourceTree = "<group>"; };
+		E16A4951286BF22B00EF1A38 /* GainputInputDeviceBuiltInIos.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GainputInputDeviceBuiltInIos.mm; sourceTree = "<group>"; };
+		E16A4952286BF22B00EF1A38 /* GainputInputDeviceBuiltIn.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GainputInputDeviceBuiltIn.cpp; sourceTree = "<group>"; };
+		E16A4953286BF22B00EF1A38 /* GainputInputDeviceBuiltInIos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GainputInputDeviceBuiltInIos.h; sourceTree = "<group>"; };
+		E16A4954286BF22B00EF1A38 /* GainputInputDeviceBuiltInImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GainputInputDeviceBuiltInImpl.h; sourceTree = "<group>"; };
+		E16A4955286BF22B00EF1A38 /* GainputInputDeviceBuiltInAndroid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GainputInputDeviceBuiltInAndroid.h; sourceTree = "<group>"; };
+		E16A4956286BF22B00EF1A38 /* GainputInputDeviceBuiltInNull.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GainputInputDeviceBuiltInNull.h; sourceTree = "<group>"; };
+		E16A4958286BF22B00EF1A38 /* GainputKeyboardKeyNames.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GainputKeyboardKeyNames.h; sourceTree = "<group>"; };
+		E16A4959286BF22B00EF1A38 /* GainputInputDeviceKeyboardLinux.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GainputInputDeviceKeyboardLinux.h; sourceTree = "<group>"; };
+		E16A495A286BF22B00EF1A38 /* GainputInputDeviceKeyboardNull.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GainputInputDeviceKeyboardNull.h; sourceTree = "<group>"; };
+		E16A495B286BF22B00EF1A38 /* GainputInputDeviceKeyboardWinRaw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GainputInputDeviceKeyboardWinRaw.h; sourceTree = "<group>"; };
+		E16A495C286BF22B00EF1A38 /* GainputInputDeviceKeyboardWin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GainputInputDeviceKeyboardWin.h; sourceTree = "<group>"; };
+		E16A495D286BF22B00EF1A38 /* GainputInputDeviceKeyboardMac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GainputInputDeviceKeyboardMac.h; sourceTree = "<group>"; };
+		E16A495E286BF22B00EF1A38 /* GainputInputDeviceKeyboardEvdev.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GainputInputDeviceKeyboardEvdev.h; sourceTree = "<group>"; };
+		E16A495F286BF22B00EF1A38 /* GainputInputDeviceKeyboardAndroid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GainputInputDeviceKeyboardAndroid.h; sourceTree = "<group>"; };
+		E16A4960286BF22B00EF1A38 /* GainputInputDeviceKeyboardImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GainputInputDeviceKeyboardImpl.h; sourceTree = "<group>"; };
+		E16A4961286BF22B00EF1A38 /* GainputInputDeviceKeyboard.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GainputInputDeviceKeyboard.cpp; sourceTree = "<group>"; };
+		E16A4962286BF22B00EF1A38 /* GainputInputDeviceKeyboardMac.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GainputInputDeviceKeyboardMac.cpp; sourceTree = "<group>"; };
+		E16A4963286BF22B00EF1A38 /* GainputInputDevice.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GainputInputDevice.cpp; sourceTree = "<group>"; };
+		E16A4988286BF4A000EF1A38 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E16A498A286BF4F200EF1A38 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		E16A498C286BF57E00EF1A38 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		E16A498E286BF65300EF1A38 /* libgainputstatic.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgainputstatic.a; path = 2048/gainput/lib/x86_64_osx/libgainputstatic.a; sourceTree = "<group>"; };
+		E16A4992286BF67F00EF1A38 /* libgainputstatic.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libgainputstatic.a; sourceTree = "<group>"; };
+		E16A4994286BFE2E00EF1A38 /* hardware_input.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = hardware_input.hpp; sourceTree = "<group>"; };
+		E16A4997286BFF4000EF1A38 /* hardware_input.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = hardware_input.mm; path = 2048/hardware_input.mm; sourceTree = SOURCE_ROOT; };
+		E16A499F286C60F100EF1A38 /* scene.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = scene.cpp; sourceTree = "<group>"; };
+		E16A49A0286C60F100EF1A38 /* scene.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = scene.hpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E14BA908286AD44200082EA4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E16A499B286C4DE000EF1A38 /* CoreGraphics.framework in Frameworks */,
+				E16A499A286C4DD900EF1A38 /* IOKit.framework in Frameworks */,
+				E16A4999286C4DD200EF1A38 /* AppKit.framework in Frameworks */,
+				E16A498F286BF65300EF1A38 /* libgainputstatic.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E14BA902286AD44200082EA4 = {
+			isa = PBXGroup;
+			children = (
+				E14BA90D286AD44200082EA4 /* 2048 */,
+				E14BA90C286AD44200082EA4 /* Products */,
+				E16A4987286BF4A000EF1A38 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E14BA90C286AD44200082EA4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E14BA90B286AD44200082EA4 /* 2048 */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E14BA90D286AD44200082EA4 /* 2048 */ = {
+			isa = PBXGroup;
+			children = (
+				E14BA90E286AD44200082EA4 /* main.cpp */,
+				E16A499F286C60F100EF1A38 /* scene.cpp */,
+				E16A49A0286C60F100EF1A38 /* scene.hpp */,
+				E16A4994286BFE2E00EF1A38 /* hardware_input.hpp */,
+				E16A4997286BFF4000EF1A38 /* hardware_input.mm */,
+				E16A48E9286BF22B00EF1A38 /* gainput */,
+			);
+			path = 2048;
+			sourceTree = "<group>";
+		};
+		E16A48E9286BF22B00EF1A38 /* gainput */ = {
+			isa = PBXGroup;
+			children = (
+				E16A48EA286BF22B00EF1A38 /* CMakeLists.txt */,
+				E16A48EB286BF22B00EF1A38 /* include */,
+				E16A4990286BF67F00EF1A38 /* lib */,
+				E16A490D286BF22B00EF1A38 /* source */,
+			);
+			path = gainput;
+			sourceTree = "<group>";
+		};
+		E16A48EB286BF22B00EF1A38 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				E16A48EC286BF22B00EF1A38 /* gainput */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		E16A48EC286BF22B00EF1A38 /* gainput */ = {
+			isa = PBXGroup;
+			children = (
+				E16A48ED286BF22B00EF1A38 /* GainputMapFilters.h */,
+				E16A48EE286BF22B00EF1A38 /* GainputInputDeviceTouch.h */,
+				E16A48EF286BF22B00EF1A38 /* GainputContainers.h */,
+				E16A48F0286BF22B00EF1A38 /* GainputInputMap.h */,
+				E16A48F1286BF22B00EF1A38 /* GainputInputDevicePad.h */,
+				E16A48F2286BF22B00EF1A38 /* GainputDebugRenderer.h */,
+				E16A48F3286BF22B00EF1A38 /* GainputAllocator.h */,
+				E16A48F4286BF22B00EF1A38 /* GainputLog.h */,
+				E16A48F5286BF22B00EF1A38 /* GainputInputDeltaState.h */,
+				E16A48F6286BF22B00EF1A38 /* GainputInputManager.h */,
+				E16A48F7286BF22B00EF1A38 /* GainputInputState.h */,
+				E16A48F8286BF22B00EF1A38 /* gainput.h */,
+				E16A48F9286BF22B00EF1A38 /* GainputInputDevice.h */,
+				E16A48FA286BF22B00EF1A38 /* GainputInputDeviceMouse.h */,
+				E16A48FB286BF22B00EF1A38 /* GainputHelpers.h */,
+				E16A48FC286BF22B00EF1A38 /* GainputInputDeviceKeyboard.h */,
+				E16A48FD286BF22B00EF1A38 /* gestures */,
+				E16A4906286BF22B00EF1A38 /* GainputInputDeviceBuiltIn.h */,
+				E16A4907286BF22B00EF1A38 /* GainputInputListener.h */,
+				E16A4908286BF22B00EF1A38 /* recorder */,
+				E16A490C286BF22B00EF1A38 /* GainputIos.h */,
+			);
+			path = gainput;
+			sourceTree = "<group>";
+		};
+		E16A48FD286BF22B00EF1A38 /* gestures */ = {
+			isa = PBXGroup;
+			children = (
+				E16A48FE286BF22B00EF1A38 /* GainputTapGesture.h */,
+				E16A48FF286BF22B00EF1A38 /* GainputPinchGesture.h */,
+				E16A4900286BF22B00EF1A38 /* GainputButtonStickGesture.h */,
+				E16A4901286BF22B00EF1A38 /* GainputDoubleClickGesture.h */,
+				E16A4902286BF22B00EF1A38 /* GainputRotateGesture.h */,
+				E16A4903286BF22B00EF1A38 /* GainputGestures.h */,
+				E16A4904286BF22B00EF1A38 /* GainputSimultaneouslyDownGesture.h */,
+				E16A4905286BF22B00EF1A38 /* GainputHoldGesture.h */,
+			);
+			path = gestures;
+			sourceTree = "<group>";
+		};
+		E16A4908286BF22B00EF1A38 /* recorder */ = {
+			isa = PBXGroup;
+			children = (
+				E16A4909286BF22B00EF1A38 /* GainputInputRecorder.h */,
+				E16A490A286BF22B00EF1A38 /* GainputInputPlayer.h */,
+				E16A490B286BF22B00EF1A38 /* GainputInputRecording.h */,
+			);
+			path = recorder;
+			sourceTree = "<group>";
+		};
+		E16A490D286BF22B00EF1A38 /* source */ = {
+			isa = PBXGroup;
+			children = (
+				E16A490E286BF22B00EF1A38 /* gainput */,
+			);
+			path = source;
+			sourceTree = "<group>";
+		};
+		E16A490E286BF22B00EF1A38 /* gainput */ = {
+			isa = PBXGroup;
+			children = (
+				E16A490F286BF22B00EF1A38 /* GainputWindows.h */,
+				E16A4910286BF22B00EF1A38 /* GainputIos.mm */,
+				E16A4911286BF22B00EF1A38 /* touch */,
+				E16A4918286BF22B00EF1A38 /* gainput.cpp */,
+				E16A4919286BF22B00EF1A38 /* GainputInputState.cpp */,
+				E16A491A286BF22B00EF1A38 /* GainputMapFilters.cpp */,
+				E16A491B286BF22B00EF1A38 /* pad */,
+				E16A4926286BF22B00EF1A38 /* mouse */,
+				E16A4931286BF22B00EF1A38 /* GainputHelpersEvdev.h */,
+				E16A4932286BF22B00EF1A38 /* GainputInputDeltaState.cpp */,
+				E16A4933286BF22B00EF1A38 /* gestures */,
+				E16A493B286BF22B00EF1A38 /* recorder */,
+				E16A493F286BF22B00EF1A38 /* dev */,
+				E16A494C286BF22B00EF1A38 /* GainputMac.mm */,
+				E16A494D286BF22B00EF1A38 /* GainputInputMap.cpp */,
+				E16A494E286BF22B00EF1A38 /* GainputInputManager.cpp */,
+				E16A494F286BF22B00EF1A38 /* GainputAllocator.cpp */,
+				E16A4950286BF22B00EF1A38 /* builtin */,
+				E16A4957286BF22B00EF1A38 /* keyboard */,
+				E16A4963286BF22B00EF1A38 /* GainputInputDevice.cpp */,
+			);
+			path = gainput;
+			sourceTree = "<group>";
+		};
+		E16A4911286BF22B00EF1A38 /* touch */ = {
+			isa = PBXGroup;
+			children = (
+				E16A4912286BF22B00EF1A38 /* GainputInputDeviceTouchNull.h */,
+				E16A4913286BF22B00EF1A38 /* GainputInputDeviceTouchAndroid.h */,
+				E16A4914286BF22B00EF1A38 /* GainputInputDeviceTouch.cpp */,
+				E16A4915286BF22B00EF1A38 /* GainputTouchInfo.h */,
+				E16A4916286BF22B00EF1A38 /* GainputInputDeviceTouchImpl.h */,
+				E16A4917286BF22B00EF1A38 /* GainputInputDeviceTouchIos.h */,
+			);
+			path = touch;
+			sourceTree = "<group>";
+		};
+		E16A491B286BF22B00EF1A38 /* pad */ = {
+			isa = PBXGroup;
+			children = (
+				E16A491C286BF22B00EF1A38 /* GainputInputDevicePadMac.cpp */,
+				E16A491D286BF22B00EF1A38 /* GainputInputDevicePadIos.mm */,
+				E16A491E286BF22B00EF1A38 /* GainputInputDevicePadWin.h */,
+				E16A491F286BF22B00EF1A38 /* GainputInputDevicePadMac.h */,
+				E16A4920286BF22B00EF1A38 /* GainputInputDevicePadAndroid.h */,
+				E16A4921286BF22B00EF1A38 /* GainputInputDevicePadImpl.h */,
+				E16A4922286BF22B00EF1A38 /* GainputInputDevicePad.cpp */,
+				E16A4923286BF22B00EF1A38 /* GainputInputDevicePadLinux.h */,
+				E16A4924286BF22B00EF1A38 /* GainputInputDevicePadIos.h */,
+				E16A4925286BF22B00EF1A38 /* GainputInputDevicePadNull.h */,
+			);
+			path = pad;
+			sourceTree = "<group>";
+		};
+		E16A4926286BF22B00EF1A38 /* mouse */ = {
+			isa = PBXGroup;
+			children = (
+				E16A4927286BF22B00EF1A38 /* GainputMouseInfo.h */,
+				E16A4928286BF22B00EF1A38 /* GainputInputDeviceMouseImpl.h */,
+				E16A4929286BF22B00EF1A38 /* GainputInputDeviceMouseEvdev.h */,
+				E16A492A286BF22B00EF1A38 /* GainputInputDeviceMouseMac.mm */,
+				E16A492B286BF22B00EF1A38 /* GainputInputDeviceMouseWinRaw.h */,
+				E16A492C286BF22B00EF1A38 /* GainputInputDeviceMouseNull.h */,
+				E16A492D286BF22B00EF1A38 /* GainputInputDeviceMouseMac.h */,
+				E16A492E286BF22B00EF1A38 /* GainputInputDeviceMouse.cpp */,
+				E16A492F286BF22B00EF1A38 /* GainputInputDeviceMouseLinux.h */,
+				E16A4930286BF22B00EF1A38 /* GainputInputDeviceMouseWin.h */,
+			);
+			path = mouse;
+			sourceTree = "<group>";
+		};
+		E16A4933286BF22B00EF1A38 /* gestures */ = {
+			isa = PBXGroup;
+			children = (
+				E16A4934286BF22B00EF1A38 /* GainputButtonStickGesture.cpp */,
+				E16A4935286BF22B00EF1A38 /* GainputDoubleClickGesture.cpp */,
+				E16A4936286BF22B00EF1A38 /* GainputPinchGesture.cpp */,
+				E16A4937286BF22B00EF1A38 /* GainputRotateGesture.cpp */,
+				E16A4938286BF22B00EF1A38 /* GainputSimultaneouslyDownGesture.cpp */,
+				E16A4939286BF22B00EF1A38 /* GainputTapGesture.cpp */,
+				E16A493A286BF22B00EF1A38 /* GainputHoldGesture.cpp */,
+			);
+			path = gestures;
+			sourceTree = "<group>";
+		};
+		E16A493B286BF22B00EF1A38 /* recorder */ = {
+			isa = PBXGroup;
+			children = (
+				E16A493C286BF22B00EF1A38 /* GainputInputRecording.cpp */,
+				E16A493D286BF22B00EF1A38 /* GainputInputRecorder.cpp */,
+				E16A493E286BF22B00EF1A38 /* GainputInputPlayer.cpp */,
+			);
+			path = recorder;
+			sourceTree = "<group>";
+		};
+		E16A493F286BF22B00EF1A38 /* dev */ = {
+			isa = PBXGroup;
+			children = (
+				E16A4940286BF22B00EF1A38 /* GainputNetAddress.h */,
+				E16A4941286BF22B00EF1A38 /* GainputNetListener.cpp */,
+				E16A4942286BF22B00EF1A38 /* GainputMemoryStream.cpp */,
+				E16A4943286BF22B00EF1A38 /* GainputNetListener.h */,
+				E16A4944286BF22B00EF1A38 /* GainputNetConnection.cpp */,
+				E16A4945286BF22B00EF1A38 /* GainputMemoryStream.h */,
+				E16A4946286BF22B00EF1A38 /* GainputDev.h */,
+				E16A4947286BF22B00EF1A38 /* GainputNetConnection.h */,
+				E16A4948286BF22B00EF1A38 /* GainputDevProtocol.h */,
+				E16A4949286BF22B00EF1A38 /* GainputStream.h */,
+				E16A494A286BF22B00EF1A38 /* GainputDev.cpp */,
+				E16A494B286BF22B00EF1A38 /* GainputNetAddress.cpp */,
+			);
+			path = dev;
+			sourceTree = "<group>";
+		};
+		E16A4950286BF22B00EF1A38 /* builtin */ = {
+			isa = PBXGroup;
+			children = (
+				E16A4951286BF22B00EF1A38 /* GainputInputDeviceBuiltInIos.mm */,
+				E16A4952286BF22B00EF1A38 /* GainputInputDeviceBuiltIn.cpp */,
+				E16A4953286BF22B00EF1A38 /* GainputInputDeviceBuiltInIos.h */,
+				E16A4954286BF22B00EF1A38 /* GainputInputDeviceBuiltInImpl.h */,
+				E16A4955286BF22B00EF1A38 /* GainputInputDeviceBuiltInAndroid.h */,
+				E16A4956286BF22B00EF1A38 /* GainputInputDeviceBuiltInNull.h */,
+			);
+			path = builtin;
+			sourceTree = "<group>";
+		};
+		E16A4957286BF22B00EF1A38 /* keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				E16A4958286BF22B00EF1A38 /* GainputKeyboardKeyNames.h */,
+				E16A4959286BF22B00EF1A38 /* GainputInputDeviceKeyboardLinux.h */,
+				E16A495A286BF22B00EF1A38 /* GainputInputDeviceKeyboardNull.h */,
+				E16A495B286BF22B00EF1A38 /* GainputInputDeviceKeyboardWinRaw.h */,
+				E16A495C286BF22B00EF1A38 /* GainputInputDeviceKeyboardWin.h */,
+				E16A495D286BF22B00EF1A38 /* GainputInputDeviceKeyboardMac.h */,
+				E16A495E286BF22B00EF1A38 /* GainputInputDeviceKeyboardEvdev.h */,
+				E16A495F286BF22B00EF1A38 /* GainputInputDeviceKeyboardAndroid.h */,
+				E16A4960286BF22B00EF1A38 /* GainputInputDeviceKeyboardImpl.h */,
+				E16A4961286BF22B00EF1A38 /* GainputInputDeviceKeyboard.cpp */,
+				E16A4962286BF22B00EF1A38 /* GainputInputDeviceKeyboardMac.cpp */,
+			);
+			path = keyboard;
+			sourceTree = "<group>";
+		};
+		E16A4987286BF4A000EF1A38 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E16A498E286BF65300EF1A38 /* libgainputstatic.a */,
+				E16A498C286BF57E00EF1A38 /* AppKit.framework */,
+				E16A498A286BF4F200EF1A38 /* IOKit.framework */,
+				E16A4988286BF4A000EF1A38 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E16A4990286BF67F00EF1A38 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				E16A4991286BF67F00EF1A38 /* x86_64_osx */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		E16A4991286BF67F00EF1A38 /* x86_64_osx */ = {
+			isa = PBXGroup;
+			children = (
+				E16A4992286BF67F00EF1A38 /* libgainputstatic.a */,
+			);
+			path = x86_64_osx;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E14BA90A286AD44200082EA4 /* 2048 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E14BA912286AD44200082EA4 /* Build configuration list for PBXNativeTarget "2048" */;
+			buildPhases = (
+				E14BA907286AD44200082EA4 /* Sources */,
+				E14BA908286AD44200082EA4 /* Frameworks */,
+				E14BA909286AD44200082EA4 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = 2048;
+			productName = 2048;
+			productReference = E14BA90B286AD44200082EA4 /* 2048 */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E14BA903286AD44200082EA4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					E14BA90A286AD44200082EA4 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+				};
+			};
+			buildConfigurationList = E14BA906286AD44200082EA4 /* Build configuration list for PBXProject "2048" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E14BA902286AD44200082EA4;
+			productRefGroup = E14BA90C286AD44200082EA4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E14BA90A286AD44200082EA4 /* 2048 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E14BA907286AD44200082EA4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E16A4998286BFF4000EF1A38 /* hardware_input.mm in Sources */,
+				E16A49A1286C60F100EF1A38 /* scene.cpp in Sources */,
+				E14BA90F286AD44200082EA4 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		E14BA910286AD44200082EA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		E14BA911286AD44200082EA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		E14BA913286AD44200082EA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 94E6JX5VHS;
+				ENABLE_HARDENED_RUNTIME = YES;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/2048/gainput/include";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/2048/gainput/lib/x86_64_osx",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E14BA914286AD44200082EA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 94E6JX5VHS;
+				ENABLE_HARDENED_RUNTIME = YES;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/2048/gainput/include";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/2048/gainput/lib/x86_64_osx",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E14BA906286AD44200082EA4 /* Build configuration list for PBXProject "2048" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E14BA910286AD44200082EA4 /* Debug */,
+				E14BA911286AD44200082EA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E14BA912286AD44200082EA4 /* Build configuration list for PBXNativeTarget "2048" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E14BA913286AD44200082EA4 /* Debug */,
+				E14BA914286AD44200082EA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E14BA903286AD44200082EA4 /* Project object */;
+}
